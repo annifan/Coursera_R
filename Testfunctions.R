@@ -1,0 +1,16 @@
+getwd()
+file.edit("Desktop/Cousera_R/cachematrix.R")
+my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+my_matrix$get()
+my_matrix$getInverse()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+#getting cached data
+my_matrix$getInverse()
+my_matrix$set(matrix(c(2, 2, 1, 4), 2, 2))
+my_matrix$get()
+my_matrix$getInverse()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+#getting cached data
+my_matrix$getInverse()
